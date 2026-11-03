@@ -14,7 +14,3 @@
    - `RetailDDS.sql`
 3. Mở file `23120055_23120290_21120277\23120055_23120290_21120277.sln` bằng Visual Studio.
 
-## 3. Phân công công việc (2 người làm trên Package riêng để tránh xung đột file `.dtsx`)
-- **Người 1**: Tạo package riêng xử lý nạp 3 bảng Dimension (`DimDate`, `DimCustomer`, `DimProduct`) + Nạp `FactSales` từ nguồn `dbo.ERP_Sales`.
-- **Người 2**: Tạo package riêng xử lý nạp `FactSales` từ 2 nguồn file `POS.csv` và `Online.xlsx`.
-- Sau khi hoàn thành, ghép chung vào `Package.dtsx` chính bằng `Sequence Container` hoặc `Execute Package Task`.
